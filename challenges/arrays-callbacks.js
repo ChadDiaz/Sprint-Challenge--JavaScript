@@ -59,7 +59,7 @@ console.log("");
 
 console.log("Going to try and use .sort and see if I can use it propertly: SEE BELOW")
 let orderByPopulation = zooAnimals.sort((a,b) => (a.population > b.population ? 1 : -1));
-console.log("Trying to use .sort method and sort by population" , orderByPopulation)
+console.log("Trying to use .sort method and sort by population least to greatest --> " , orderByPopulation)
 console.log("");
 
 // ==== Callbacks ====  
