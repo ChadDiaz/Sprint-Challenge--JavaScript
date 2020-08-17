@@ -48,7 +48,7 @@ class CubeMaker extends CuboidMaker{
         this.height = cubeAttrs.height;
     }
     cubeSurfaceArea(){
-        console.log(`The surface area of this cube is ${6*(Math.pow(this.length,2))}.`)
+        console.log(`The surface area of this cube is ${6*(Math.pow(this.length, 2))}.`)
     }
     cubeVolume(){
         console.log(`The volume of this cube is ${Math.pow(this.length, 3)}`)

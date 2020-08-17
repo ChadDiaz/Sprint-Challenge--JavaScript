@@ -56,6 +56,12 @@ let populationTotal = zooAnimals.reduce((accumulator, element ) => {
 console.log("The answer to ARRAYS task 4 is " , populationTotal);
 console.log("");
 
+
+console.log("Going to try and use .sort and see if I can use it propertly: SEE BELOW")
+let orderByPopulation = zooAnimals.sort((a,b) => (a.population > b.population ? 1 : -1));
+console.log("Trying to use .sort method and sort by population" , orderByPopulation)
+console.log("");
+
 // ==== Callbacks ====  
 
 /* Step 1: Create a higher-order function
