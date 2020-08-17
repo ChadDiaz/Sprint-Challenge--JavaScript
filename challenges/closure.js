@@ -2,7 +2,7 @@
 
 /* Task 1: Study the code below and explain in your own words why nested function can access the variable internal. */
 
-console.log("===============Closure Section=============")
+console.log("===============CLOSURE SECTION=============")
 const external = "I'm outside the function";
 
 function myFunction() {
@@ -17,7 +17,7 @@ function myFunction() {
 myFunction();
 console.log("");
 // Explanation: 
-console.log("The answer to task 1 is --> " + `"nestedFunction()", which is a part of "myFunction()" has the ability to access the variable "internal" because they share the same lexical scope.  Any function can reach, both within itself, and outside of itself (onto the global scope) but variables can NOT reach into functions.`);
+console.log("The answer to CLOSURE task 1 is --> " + `"nestedFunction()", which is a part of "myFunction()" has the ability to access the variable "internal" because they share the same lexical scope.  Any function can reach, both within itself, and outside of itself (onto the global scope) but variables can NOT reach into functions.`);
 console.log("");
 /* Task 2: Counter */
 
@@ -30,4 +30,5 @@ sumation = (number) =>{
   }
   return counter;
 }
-console.log("The answer to task 2 is --> " + sumation(4));
+console.log("The answer to CLOSURE task 2 is --> " + sumation(4));
+console.log("");

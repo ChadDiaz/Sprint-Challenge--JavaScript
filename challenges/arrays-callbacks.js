@@ -22,7 +22,7 @@ The zoos want to display both the scientific name and the animal name in front o
 */
 const displayNames = [];
 zooAnimals.forEach(element =>{displayNames.push(`Name: ${element.animal_name}, ${element.scientific_name}`)})
-console.log("The answer to task 1 is " , displayNames);
+console.log("The answer to ARRAYS task 1 is " , displayNames);
 console.log("")
 /* Request 2: .map()
 
@@ -31,7 +31,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = zooAnimals.map((element) => element.animal_name.toLowerCase());
-console.log("The answer to task 2 is " ,lowCaseAnimalNames);
+console.log("The answer to ARRAYS task 2 is " , lowCaseAnimalNames);
 console.log("");
 
 /* Request 3: .filter() 
@@ -40,7 +40,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = zooAnimals.filter((element) => element.population < 5);
-console.log("The answer to task 3 is " , lowPopulationAnimals);
+console.log("The answer to ARRAYS task 3 is " , lowPopulationAnimals);
 console.log("");
 
 /* Request 4: .reduce() 
@@ -53,7 +53,7 @@ let populationTotal = zooAnimals.reduce((accumulator, element ) => {
 }, 0)
 
 
-console.log("The answer to task 4 is " , populationTotal);
+console.log("The answer to ARRAYS task 4 is " , populationTotal);
 console.log("");
 
 // ==== Callbacks ====  
