@@ -1,7 +1,7 @@
 // ==== ADVANCED Array Methods ====
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
-
+console.log("===========ARRAYS AND CALLBACKS SECTION============")
 const zooAnimals = [
   { animal_name: "Jackal, asiatic", population: 5, scientific_name: "Canis aureus", state: "Kentucky" },
   { animal_name: "Screamer, southern", population: 1, scientific_name: "Chauna torquata", state: "Alabama" },
@@ -64,23 +64,26 @@ console.log("");
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-
+consume = (a,b,cb) => {return cb(a,b)};
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-
+add = (a,b) => {return a+b};
+multiply = (a,b) => {return a*b};
+greeting = (firstName, lastName) => {return `Hello ${firstName} ${lastName}, nice to meet you!`}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log("The answer to CALLBACKS Task 1 is --> " + consume(2, 2, add)); // 4
+console.log("");
 
+console.log("The answer to CALLBACKS Task 2 is --> " + consume(10, 16, multiply)); // 160
+console.log("");
 
-
-
+console.log("The answer to CALLBACKS Task 3 is --> " + consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log("");
 /*
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
